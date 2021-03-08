@@ -49,7 +49,7 @@ for i in range(len(DATA)):
             japanese.append(DATA[start:i].decode("shift-jis"))
             state = 0
 
-if (False):
+if (True):
 
     # translate the text
     print ("translating...")

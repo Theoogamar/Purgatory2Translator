@@ -61,7 +61,7 @@ for file in maps:
 
     print (file)
 
-    if (False):
+    if (True):
 
         # translate the text
         print ("translating...")
@@ -72,7 +72,8 @@ for file in maps:
         with open(os.path.join("pickles/Choices", file.replace("mps", "pickle")), 'wb') as handle:
             pickle.dump(english, handle)
     else:
-
+        
+        # load the translated text
         with open(os.path.join("pickles/Choices", file.replace("mps", "pickle")), 'rb') as handle:
             english = pickle.load(handle)
             print (english)

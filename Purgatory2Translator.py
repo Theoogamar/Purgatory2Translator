@@ -1,6 +1,12 @@
 from googletrans import Translator
 import os, pickle
 
+# make dirs for things
+os.makedirs("MapData", exist_ok=True)
+os.makedirs("pickles", exist_ok=True)
+os.makedirs("pickles/MapData", exist_ok=True)
+os.makedirs("pickles/Choices", exist_ok=True)
+
 # main varables
 translator = Translator(service_urls=["translate.google.com.au"]) # , "translate.google.com"
 Source = r"Data/MapData"
